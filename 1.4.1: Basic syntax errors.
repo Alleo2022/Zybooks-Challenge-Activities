@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void) {
+   int userNum;
+
+   userNum = 5;
+
+printf("Predictions are hard.\n");
+printf("Especially");
+printf(" about the future.\n");
+printf("Num is: %d\n", userNum);
+
+   return 0;
+}
