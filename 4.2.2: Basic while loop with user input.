@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+   int userNum;
+
+   scanf("%d", &userNum);
+
+   while (userNum >= 0) {
+      printf("Body\n");
+      scanf("%d", &userNum);
+   }
+   printf("Done.\n");
+
+   return 0;
+}
