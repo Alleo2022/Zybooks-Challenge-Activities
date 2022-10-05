@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+   int numInsects;
+
+   scanf("%d", &numInsects); // Must be >= 1
+
+   while ( numInsects < 100) {
+      printf("%d ", numInsects);
+      numInsects= numInsects * 2;
+   }
+   printf ("\n");
+
+   return 0;
+}
