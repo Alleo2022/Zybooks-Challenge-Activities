@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+   char a;
+   char b;
+   char c;
+
+   scanf(" %c ", &a);
+   scanf(" %c ", &b);
+   scanf(" %c ", &c);
+
+// a = x , b = y , c = z 
+
+   printf ( "%c%c%c %c%c%c %c%c%c %c%c%c %c%c%c %c%c%c" , a,b,c,a,c,b,b,a,c,b,c,a,c,a,b,c,b,a);
+
+   printf("\n");
+
+   return 0;
+}
