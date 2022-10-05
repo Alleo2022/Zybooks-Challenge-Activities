@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>   // Enables use of rand()
+
+int main(void) {
+   int seedVal;
+
+   scanf("%d", &seedVal);
+
+   srand(seedVal);
+   printf( "%d\n" , rand() % 10 );
+   printf( "%d\n" , rand() % 10 );
+
+   return 0;
+}
