@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void) {
+   int numRows;
+   int numColumns;
+   int currentRow;
+   int currentColumn;
+   char currentColumnLetter;
+
+   scanf("%d", &numRows);
+   scanf("%d", &numColumns);
+
+   for(int i = 1; i <= numRows; i++){
+      if(numColumns > 0){
+      for(currentColumnLetter = 'A'; currentColumnLetter <= 'C'; currentColumnLetter++){
+         printf("%d%c ", i, currentColumnLetter);
+      }
+      }
+   }
+
+
+   printf("\n");
+
+   return 0;
+}
