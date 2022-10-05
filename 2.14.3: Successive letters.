@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(void) {
+
+char letterStart; 
+
+scanf( " %c " , &letterStart);
+
+printf( "%c%c\n" , letterStart, letterStart+1);
+
+   return 0;
+}
