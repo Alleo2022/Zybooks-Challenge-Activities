@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+   const int NUM_VALS = 4;
+   int courseGrades[NUM_VALS];
+   int i;
+
+   for (i = 0; i < NUM_VALS; ++i) {
+      scanf("%d", &(courseGrades[i]));
+   }
+
+   /* Your solution goes here  */
+
+   return 0;
+}
