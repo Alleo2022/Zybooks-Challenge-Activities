@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+   int songNum;
+
+   songNum = 5;
+
+   printf("Num: %d\n", songNum);
+   printf("%d\n", songNum); 
+   printf("%d songs\n", songNum);
+
+   return 0;
+}
