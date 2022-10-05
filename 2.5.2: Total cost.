@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+   int numDrinks;
+   int numTacos;
+   int totalCost;
+
+   scanf("%d", &numDrinks);
+   scanf("%d", &numTacos);
+
+   totalCost = ( 2 * numDrinks) + ( 3 * numTacos);
+
+   printf("Total cost: %d\n", totalCost);
+
+   return 0;
+}
