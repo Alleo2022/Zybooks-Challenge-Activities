@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+   int userNum;
+
+   scanf("%d", &userNum);
+
+   if (userNum > 0) {
+   printf("Positive.\n");
+}
+else {
+   printf("Non-positive, converting to 1.\n");
+   userNum = 1;
+}
+printf("Final: %d\n", userNum);
+
+
+   return 0;
+}
