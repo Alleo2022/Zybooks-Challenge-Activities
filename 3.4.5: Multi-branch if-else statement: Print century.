@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(void) {
+   int givenYear;
+
+   scanf("%d", &givenYear);
+
+     if ( givenYear >= 2101) {
+      printf("Distant future");
+   }
+   else if ( givenYear >= 2001) {
+      printf("21st century");
+   }
+   else if ( givenYear >= 1901) {
+      printf("20th century");
+   }
+   else {
+      printf("Long ago");
+   }
+
+   printf("\n");
+
+   return 0;
+}
