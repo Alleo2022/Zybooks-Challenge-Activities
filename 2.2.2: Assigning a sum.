@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+   int numCoins;
+   int numNickels;
+   int numDimes;
+
+   numNickels = 5;
+   numDimes = 6;
+
+   numCoins = numNickels + numDimes;
+
+   printf("There are %d coins\n", numCoins);
+
+   return 0;
+}
