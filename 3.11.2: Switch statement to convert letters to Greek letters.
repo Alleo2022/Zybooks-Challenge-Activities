@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void) {
+   char origLetter;
+
+   scanf(" %c", &origLetter);
+
+switch (origLetter) {
+   case 'a':
+   case 'A':
+       printf ("Alpha\n");
+      break;
+
+   case 'b':
+   case 'B':
+      printf ("Beta\n");
+      break;
+    
+   default:
+      printf ("Unknown\n");
+      break;
+}
+
+   return 0;
+}
