@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(void) {
+   enum GroceryItem {GR_APPLES, GR_BANANAS, GR_JUICE, GR_WATER};
+   enum GroceryItem userItem;
+
+   userItem = GR_APPLES;
+
+   if (userItem == GR_APPLES){
+      printf("Fruit\n");
+   }
+   
+   else if (userItem == GR_BANANAS){
+      printf("Fruit\n");
+   }
+   
+   else if (userItem == GR_JUICE){
+      printf("Drink\n");
+   }
+   
+   else if (userItem == GR_WATER){
+      printf("Drink\n");
+   }
+
+   return 0;
+}
