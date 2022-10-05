@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+int main(void) {
+   bool isTeenager;
+   int kidAge;
+
+   scanf("%d", &kidAge);
+
+      if ((kidAge >= 13) && (kidAge <= 19) ) {
+      isTeenager = true;
+   }
+   else {
+      isTeenager = false;
+   }
+
+   if (isTeenager) {
+      printf("Teen\n");
+   }
+   else {
+      printf("Not teen\n");
+   }
+
+   return 0;
+}
