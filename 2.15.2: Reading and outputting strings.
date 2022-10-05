@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+   char firstName[20];
+   char lastName[20];
+
+scanf("%s" , firstName);
+scanf("%s" , lastName);
+
+printf( "%s, %s\n" , lastName, firstName);
+
+   return 0;
+}
