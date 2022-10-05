@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+   double G = 6.673e-11;
+   double M = 5.98e24;
+   double accelGravity;
+   double distCenter;
+   scanf("%lf", &distCenter);
+
+   /* Your solution goes here  */
+
+   printf("%lf\n", accelGravity);
+
+   return 0;
+}
