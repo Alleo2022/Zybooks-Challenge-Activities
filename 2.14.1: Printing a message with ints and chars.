@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+   char letterToQuit;
+   int  numPresses;
+
+   scanf(" %c ", &letterToQuit);
+   scanf("%d", &numPresses);
+
+   printf( "Press the %c key %d times to quit.\n", letterToQuit, numPresses);
+
+   return 0;
+}
