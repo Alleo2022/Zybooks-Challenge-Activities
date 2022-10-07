@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+
+typedef struct Sandwich_struct {
+   char sandwichName[75];
+   char ingredients[75];
+} Sandwich;
+
+int main(void) {
+
+   Sandwich listOfSandwiches[3];
+
+   strcpy(listOfSandwiches[0].sandwichName, "Chicken and Bacon");
+   strcpy(listOfSandwiches[1].sandwichName, "Chicken breast");
+   strcpy(listOfSandwiches[2].sandwichName, "Chicken with peppers");
+   strcpy(listOfSandwiches[0].ingredients, "Crispy chicken, onions, lettuce, bacon, mayonnaise");
+   strcpy(listOfSandwiches[1].ingredients, "Grilled chicken, lettuce, tomato");
+   strcpy(listOfSandwiches[2].ingredients, "Grilled chicken, red and green peppers, barbecue sauce");
+
+   printf("%s: %s\n", listOfSandwiches[0].sandwichName, listOfSandwiches[0].ingredients);
+   printf("%s: %s\n", listOfSandwiches[1].sandwichName, listOfSandwiches[1].ingredients);
+   printf("%s: %s\n", listOfSandwiches[2].sandwichName, listOfSandwiches[2].ingredients);
+
+   return 0;
+}
