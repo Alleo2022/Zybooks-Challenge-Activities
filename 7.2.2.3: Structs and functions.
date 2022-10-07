@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+typedef struct BirthdayDate_struct {
+   int numMonths;
+   int numDays;
+} BirthdayDate;
+
+BirthdayDate SetBirth(int monthVal, int dayVal) {
+   BirthdayDate tempVal;
+   tempVal.numMonths = monthVal;
+   tempVal.numDays = dayVal;
+   
+   return tempVal;
+}
+int main(void) {
+   BirthdayDate myBirthday;
+   int monthVal;
+   int dayVal;
+
+   scanf("%d", &monthVal);
+   scanf("%d", &dayVal);
+
+   myBirthday = SetBirth(monthVal, dayVal);
+
+   printf("I was born on %d/%d.\n", myBirthday.numMonths, myBirthday.numDays);
+
+   return 0;
+}
