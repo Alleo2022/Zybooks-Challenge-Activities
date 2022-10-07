@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+
+typedef struct Pizza_struct {
+   char pizzaName[75];
+   int numCalories;
+} Pizza;
+
+int main(void) {
+   Pizza pizzasInStore[2];
+
+   scanf("%s", pizzasInStore[0].pizzaName);
+   scanf("%d", &pizzasInStore[0].numCalories);
+
+   scanf("%s", pizzasInStore[1].pizzaName);
+   scanf("%d", &pizzasInStore[1].numCalories);
+
+   pizzasInStore[0].numCalories = pizzasInStore[1].numCalories;
+
+   printf("A %s slice contains %d calories.\n", pizzasInStore[0].pizzaName, pizzasInStore[0].numCalories);
+   printf("A %s slice contains %d calories.\n", pizzasInStore[1].pizzaName, pizzasInStore[1].numCalories);
+
+   return 0;
+}
