@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+typedef struct HeightFtIn_struct {
+   int feetVal;
+   int inchesVal;
+} HeightFtIn;
+
+HeightFtIn ConvertToFeetAndInches(int totalInches) {
+   HeightFtIn tempVal;
+
+tempVal.feetVal = totalInches / 12;
+totalInches %= 12;
+tempVal.inchesVal = totalInches;
+
+return tempVal;
+
+}
+
+int main(void) {
+   HeightFtIn objectSize;
+   int totalInches;
+
+   scanf("%d", &totalInches);
+
+   objectSize = ConvertToFeetAndInches(totalInches);
+
+   printf("%d feet and %d inches\n", objectSize.feetVal, objectSize.inchesVal);
+
+   return 0;
+}
