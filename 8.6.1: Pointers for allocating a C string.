@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main(void) {
+   char userStr[100];
+   char* newStr = NULL;
+
+   fgets(userStr, 100, stdin);
+
+   newStr = (char*)malloc((strlen(userStr))*sizeof(char)) ;
+
+   strcpy(newStr, userStr);
+   printf("%s\n", newStr);
+
+   return 0;
+}
