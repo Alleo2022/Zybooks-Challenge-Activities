@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+   int countLimit;
+   int printVal;
+
+   // Get user input
+   scanf("%d", &countLimit);
+
+   printVal = 0;
+   do {
+      printf("%d ", printVal);
+      printVal = printVal + 1;
+   } while ( printVal < countLimit +1 );
+   printf("\n");
+
+   return 0;
+}
