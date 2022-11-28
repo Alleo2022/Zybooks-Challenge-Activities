@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(void) {
+   double outsideTemperature;
+
+   scanf("%lf", &outsideTemperature);
+
+   printf("%+.6lf\n",outsideTemperature);
+
+   return 0;
+}
