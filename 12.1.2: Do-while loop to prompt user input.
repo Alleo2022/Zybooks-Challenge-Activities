@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+   int userInput;
+
+   do {
+      scanf("%d", &userInput);
+      printf("Enter a number (<100): \n");
+   } while ( userInput > 100);
+   printf("Your number < 100 is: %d\n", userInput);
+
+   return 0;
+}
